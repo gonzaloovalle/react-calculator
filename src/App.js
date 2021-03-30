@@ -29,6 +29,12 @@ class App extends Component {
         })
     };
 
+    backspace = () => {
+        this.setState({
+            result: this.state.result.slice(0,-1)
+        })
+    };
+
     render() {
         return (
             <div>
