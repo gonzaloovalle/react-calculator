@@ -10,6 +10,19 @@ class App extends Component {
             result: ""
         }
     }
+
+    calculate = () => {
+        try {
+            this.setState({
+                result: (eval(this.state.result) || "") + ""
+            })
+        } catch (e) {
+            this.setState({
+                result: "error"
+            })
+        }
+    }
+
     render() {
         return (
             <div>
