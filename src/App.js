@@ -21,7 +21,13 @@ class App extends Component {
                 result: "error"
             })
         }
-    }
+    };
+
+    reset = () => {
+        this.setState({
+            result: ""
+        })
+    };
 
     render() {
         return (
